@@ -8,7 +8,4 @@ target 'viperBase' do
   # Pods for viperBase
 # Add the pods for the Firebase products you want to use in your app
 # For example, to use Firebase Authentication and Cloud Firestore
-  pod 'FirebaseAuth'
-  pod 'FirebaseFirestore'
-
 end
