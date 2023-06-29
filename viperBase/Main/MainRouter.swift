@@ -28,7 +28,6 @@ extension MainRouter: MainWireFrameProtocol {
     func pushHomeScreen() {
         // TODO: push screen here
         print("push screen")
-        viewController?.navigationController?.pushViewController(ViewController(), animated: true)
     }
     
 }
