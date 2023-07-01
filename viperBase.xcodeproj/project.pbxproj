@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		61EC2A181B1EB1C8311B6776 /* Pods_viperBase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7D9B0857C0C47455FCBA2018 /* Pods_viperBase.framework */; };
+		DF04F6092A501B0C00DEA7B7 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF04F6072A501B0C00DEA7B7 /* HomeViewController.swift */; };
+		DF04F60A2A501B0C00DEA7B7 /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DF04F6082A501B0C00DEA7B7 /* HomeViewController.xib */; };
+		DF04F6102A50259500DEA7B7 /* UIViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF04F60F2A50259500DEA7B7 /* UIViewControllerExtension.swift */; };
 		DF2E51012A4C06C5005DA684 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF2E51002A4C06C5005DA684 /* AppDelegate.swift */; };
 		DF2E51032A4C06C5005DA684 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF2E51022A4C06C5005DA684 /* SceneDelegate.swift */; };
 		DF2E51052A4C06C5005DA684 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF2E51042A4C06C5005DA684 /* ViewController.swift */; };
@@ -24,6 +27,9 @@
 		466626D63F3B2628C0FBE638 /* Pods-viperBase.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-viperBase.release.xcconfig"; path = "Target Support Files/Pods-viperBase/Pods-viperBase.release.xcconfig"; sourceTree = "<group>"; };
 		7D9B0857C0C47455FCBA2018 /* Pods_viperBase.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_viperBase.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		947226F78BAE7B35C0EB6A4F /* Pods-viperBase.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-viperBase.debug.xcconfig"; path = "Target Support Files/Pods-viperBase/Pods-viperBase.debug.xcconfig"; sourceTree = "<group>"; };
+		DF04F6072A501B0C00DEA7B7 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		DF04F6082A501B0C00DEA7B7 /* HomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
+		DF04F60F2A50259500DEA7B7 /* UIViewControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtension.swift; sourceTree = "<group>"; };
 		DF2E50FD2A4C06C5005DA684 /* viperBase.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = viperBase.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DF2E51002A4C06C5005DA684 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DF2E51022A4C06C5005DA684 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -56,8 +62,64 @@
 				947226F78BAE7B35C0EB6A4F /* Pods-viperBase.debug.xcconfig */,
 				466626D63F3B2628C0FBE638 /* Pods-viperBase.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		DF04F6042A501A8000DEA7B7 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				DF04F6072A501B0C00DEA7B7 /* HomeViewController.swift */,
+				DF04F6082A501B0C00DEA7B7 /* HomeViewController.xib */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		DF04F60B2A5024D900DEA7B7 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				DFC635752A4DCF3D00C8B429 /* Main */,
+				DF04F6042A501A8000DEA7B7 /* Home */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		DF04F60C2A50253800DEA7B7 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				DF04F60E2A50255900DEA7B7 /* Extensions */,
+				DF04F60D2A50254700DEA7B7 /* CustomView */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		DF04F60D2A50254700DEA7B7 /* CustomView */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = CustomView;
+			sourceTree = "<group>";
+		};
+		DF04F60E2A50255900DEA7B7 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				DF04F60F2A50259500DEA7B7 /* UIViewControllerExtension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		DF04F6112A5025FC00DEA7B7 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				DF04F6122A506CB700DEA7B7 /* Firebase */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		DF04F6122A506CB700DEA7B7 /* Firebase */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Firebase;
 			sourceTree = "<group>";
 		};
 		DF2E50F42A4C06C5005DA684 = {
@@ -81,7 +143,9 @@
 		DF2E50FF2A4C06C5005DA684 /* viperBase */ = {
 			isa = PBXGroup;
 			children = (
-				DFC635752A4DCF3D00C8B429 /* Main */,
+				DF04F6112A5025FC00DEA7B7 /* Network */,
+				DF04F60C2A50253800DEA7B7 /* Helper */,
+				DF04F60B2A5024D900DEA7B7 /* Modules */,
 				DF2E51002A4C06C5005DA684 /* AppDelegate.swift */,
 				DF2E51022A4C06C5005DA684 /* SceneDelegate.swift */,
 				DF2E51092A4C06C6005DA684 /* Assets.xcassets */,
@@ -172,6 +236,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DFC635802A4DE79400C8B429 /* Main.storyboard in Resources */,
+				DF04F60A2A501B0C00DEA7B7 /* HomeViewController.xib in Resources */,
 				DF2E510D2A4C06C6005DA684 /* LaunchScreen.storyboard in Resources */,
 				DF2E510A2A4C06C6005DA684 /* Assets.xcassets in Resources */,
 			);
@@ -211,7 +276,9 @@
 			files = (
 				DFC635792A4DD9DE00C8B429 /* BaseViewController.swift in Sources */,
 				DFC6357D2A4DE00300C8B429 /* MainRouter.swift in Sources */,
+				DF04F6102A50259500DEA7B7 /* UIViewControllerExtension.swift in Sources */,
 				DFC6357B2A4DDF4D00C8B429 /* MainPresenter.swift in Sources */,
+				DF04F6092A501B0C00DEA7B7 /* HomeViewController.swift in Sources */,
 				DFC635772A4DCFA700C8B429 /* MainProtocols.swift in Sources */,
 				DF2E51052A4C06C5005DA684 /* ViewController.swift in Sources */,
 				DF2E51012A4C06C5005DA684 /* AppDelegate.swift in Sources */,
