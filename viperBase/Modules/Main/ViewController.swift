@@ -12,7 +12,7 @@ class ViewController: BaseViewController, MainViewProtocol {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        presenter?.pushHomeScreen()
+        presenter?.checkLoginState()
     }
 }
 
