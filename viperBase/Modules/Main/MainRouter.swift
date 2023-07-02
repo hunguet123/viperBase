@@ -15,20 +15,20 @@ class MainRouter {
     static func createModule()-> UIViewController {
         let view = ViewController()
         let router = MainRouter()
-        let presenter = MainPresenter(view: view, router: router)
+        let interactor = MainInteractor()
+        let presenter = MainPresenter(view: view, router: router, interactor: interactor)
         
         view.presenter = presenter
         router.viewController = view
+        interactor.presenter = presenter
         
         return view
     }
 }
 
 extension MainRouter: MainWireFrameProtocol {
-    func pushHomeScreen() {
-        // TODO: push screen here
-        print("push screen")
-        self.viewController?.navigationController?.pushViewController(HomeViewController(), animated: true)
+    func pushScreen(viewController view: UIViewController) {
+        self.viewController?.navigationController?.pushViewController(view, animated: true)
     }
     
 }

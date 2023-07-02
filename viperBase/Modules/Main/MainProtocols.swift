@@ -6,18 +6,29 @@
 //
 
 import Foundation
+import UIKit
 
 // MARK: - Wireframe
 protocol MainWireFrameProtocol: AnyObject {
-    func pushHomeScreen()
+    func pushScreen(viewController view: UIViewController)
 }
 
 // MARK: - Presenter
 protocol MainPresenterProtocol: AnyObject {
-    func pushHomeScreen()
+    func checkLoginState()
 }
 
 // MARK: - View
 protocol MainViewProtocol: AnyObject {
     var presenter: MainPresenterProtocol? {get set}
+}
+
+// MARK: - Interactor
+protocol MainInteractorInputProtocol: AnyObject {
+    var presenter: MainInteractorOutputProtocol? {get set}
+    func checkLoginState()
+}
+
+protocol MainInteractorOutputProtocol: AnyObject {
+    func pushScreen(viewController view: UIViewController)
 }

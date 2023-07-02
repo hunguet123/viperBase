@@ -6,20 +6,28 @@
 //
 
 import Foundation
+import UIKit
 
 class MainPresenter {
     weak private var view: MainViewProtocol?
-    private let router: MainWireFrameProtocol
+    private let router: MainWireFrameProtocol?
+    private let interactor: MainInteractorInputProtocol?
     
-    init(view: MainViewProtocol, router: MainWireFrameProtocol) {
+    init(view: MainViewProtocol, router: MainWireFrameProtocol, interactor: MainInteractorInputProtocol) {
         self.view = view
         self.router = router
+        self.interactor = interactor
     }
 }
 
 extension MainPresenter: MainPresenterProtocol {
-    func pushHomeScreen() {
-        router.pushHomeScreen()
+    func checkLoginState() {
+        interactor?.checkLoginState()
     }
-    
+}
+
+extension MainPresenter: MainInteractorOutputProtocol {
+    func pushScreen(viewController view: UIViewController) {
+        router?.pushScreen(viewController: view)
+    }
 }

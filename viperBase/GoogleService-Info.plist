@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>731771542001-927l2em9e4nid7ad98auqsfr3g33enqa.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.731771542001-927l2em9e4nid7ad98auqsfr3g33enqa</string>
+	<key>API_KEY</key>
+	<string>AIzaSyAWNzO46PetLIvQ5Ao8p-rPaw5BHKtkLvU</string>
+	<key>GCM_SENDER_ID</key>
+	<string>731771542001</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>hunguet.viperBase</string>
+	<key>PROJECT_ID</key>
+	<string>hybrid-autonomy-352803</string>
+	<key>STORAGE_BUCKET</key>
+	<string>hybrid-autonomy-352803.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:731771542001:ios:7edea803019cd09db4cc50</string>
+</dict>
+</plist>
